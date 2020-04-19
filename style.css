@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+body {
+    background-color: #EFF1F3;
+}
+
+a {
+    text-decoration: none;
+    color: #009FB7;
+    font-weight: 700;
+}
+
+h1 {
+    margin: 50px 0;
+    text-align: center;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #009FB7;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #272727;
+}
+
+header a {
+    display: inline-block;
+    padding: 20px 20px;
+}
+
+header li {
+    display: flex;
+}
+
+header li:hover {
+    background-color: white;
+}
+
+
+#destaque {
+    margin: 40px 0;
+    width: 80%;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#destaqueTextoInformativo {
+    flex: 1 1 65%;
+}
+
+#destaque h3 {
+    margin-bottom: 20px;
+}
+
+#destaque p{
+    margin: 0 25px;
+    text-align: justify;
+}
+
+#imgColumn {
+    flex: 6;
+}
+
+#imgColumn img {
+    width: 100%;
+}
+
+
+
+
+
+
+.noticiaCard {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    
+    -webkit-box-shadow: 0px 0px 11px -6px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 11px -6px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 11px -6px rgba(0,0,0,0.25);
+}
+
+.noticiaCard h2 {
+    margin-bottom: 10px;
+}
+
+.noticiaCard p {
+    margin-bottom: 10px;
+}
+
+
+#principais_noticias {
+    width: 80%;
+    margin: auto;
+}
+
+
+
+#sobre {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sobre img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+#sobre div {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+
+#conteudo_contato {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#conteudo_contato button {
+    background-color: #FED766;
+    display: flex;
+    align-self: flex-end;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border-radius: 3px;
+    border: none;
+    font-weight: 600;
+}
+
+#formulario_contato {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+
+    -webkit-box-shadow: 0px 0px 11px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 11px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 11px -6px rgba(0,0,0,0.75);
+}
+
+#formulario_contato input {
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #9F9EA5;
+    outline-color: #009FB7;
+
+    width: 300px;
+    padding: 10px;
+
+    outline: none;
+}
+
+#contato_mensagem {
+    width: 300px;
+    padding: 10px;
+    resize: none;
+    outline: none;
+
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #9F9EA5;
+    outline-color: #009FB7;
+}
+
+#contato_mensagem:focus {
+    border-color: #009FB7;
+}
+
+#formulario_contato input:focus {
+    border-color: #009FB7;
+}
+
+#formulario_contato button:hover {
+    background-color: #009FB7;
+    color: #EFF1F3;
+}
+
+
+
+
+
+
+
+#conteudo_saibaMais {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+}
+
+#conteudo_saibaMais ul {
+    margin: 15px 0 15px 10px;
+    list-style-type: none;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    header h2 {
+        text-align: center;
+        padding: 10px 0;
+    }
+    header ul {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    header li {
+        width: 100%;
+    }
+    header a {
+        width: 100%;
+    }
+
+    #destaque {
+        flex-direction: column;
+        width: 90%;
+        padding: 5%;
+    }
+    
+    #destaqueTextoInformativo h3{
+        text-align: center;
+    }
+
+    #destaque img {
+        width: 80%;
+        margin: 30px 0;
+    }
+
+    #imgColumn {
+        display: flex;
+        justify-content: center;
+    }
+}
